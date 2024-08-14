@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Sun Jun 30 15:34:07 2024
+# Process ID: 4924
+# Current directory: C:/Users/Sabina/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10096 C:\Users\Sabina\project_1\project_1.xpr
+# Log file: C:/Users/Sabina/project_1/vivado.log
+# Journal file: C:/Users/Sabina/project_1\vivado.jou
+# Running On        :DESKTOP-KPJ8RKD
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8269 MB
+# Swap memory       :3623 MB
+# Total Virtual     :11893 MB
+# Available Virtual :5993 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Sabina/project_1/project_1.xpr
+update_compile_order -fileset sources_1

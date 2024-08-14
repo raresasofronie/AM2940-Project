@@ -1,0 +1,364 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Jul  1 23:05:55 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/proiect_amd/project_1/project_1.srcs/utils_1/imports/synth_1/decodor.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/proiect_amd/project_1/project_1.srcs/utils_1/imports/synth_1/decodor.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12668
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 989.590 ; gain = 448.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'do_cnt_address', assumed default net type 'wire' [E:/proiect_amd/project_1/decodor.v:183]
+INFO: [Synth 8-11241] undeclared symbol 'do_cnt_word', assumed default net type 'wire' [E:/proiect_amd/project_1/decodor.v:184]
+INFO: [Synth 8-11241] undeclared symbol 'do_ctrl', assumed default net type 'wire' [E:/proiect_amd/project_1/decodor.v:189]
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/proiect_amd/project_1/decodor.v:157]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_reg' [E:/proiect_amd/project_1/decodor.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_reg' (0#1) [E:/proiect_amd/project_1/decodor.v:24]
+INFO: [Synth 8-6157] synthesizing module 'decodor' [E:/proiect_amd/project_1/decodor.v:100]
+INFO: [Synth 8-226] default block is never used [E:/proiect_amd/project_1/decodor.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'decodor' (0#1) [E:/proiect_amd/project_1/decodor.v:100]
+INFO: [Synth 8-6157] synthesizing module 'reg8' [E:/proiect_amd/project_1/decodor.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg8' (0#1) [E:/proiect_amd/project_1/decodor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [E:/proiect_amd/project_1/decodor.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [E:/proiect_amd/project_1/decodor.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cnt' [E:/proiect_amd/project_1/decodor.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'cnt' (0#1) [E:/proiect_amd/project_1/decodor.v:48]
+WARNING: [Synth 8-689] width (8) of port connection 'pl' does not match port width (1) of module 'cnt' [E:/proiect_amd/project_1/decodor.v:183]
+WARNING: [Synth 8-689] width (1) of port connection 'di' does not match port width (8) of module 'cnt' [E:/proiect_amd/project_1/decodor.v:183]
+WARNING: [Synth 8-7071] port 'do' of module 'cnt' is unconnected for instance 'cnt_address' [E:/proiect_amd/project_1/decodor.v:183]
+WARNING: [Synth 8-7023] instance 'cnt_address' of module 'cnt' has 10 connections declared, but only 9 given [E:/proiect_amd/project_1/decodor.v:183]
+WARNING: [Synth 8-689] width (8) of port connection 'pl' does not match port width (1) of module 'cnt' [E:/proiect_amd/project_1/decodor.v:184]
+WARNING: [Synth 8-689] width (1) of port connection 'di' does not match port width (8) of module 'cnt' [E:/proiect_amd/project_1/decodor.v:184]
+WARNING: [Synth 8-7071] port 'do' of module 'cnt' is unconnected for instance 'cnt_word' [E:/proiect_amd/project_1/decodor.v:184]
+WARNING: [Synth 8-7023] instance 'cnt_word' of module 'cnt' has 10 connections declared, but only 9 given [E:/proiect_amd/project_1/decodor.v:184]
+INFO: [Synth 8-6157] synthesizing module 'mux_data' [E:/proiect_amd/project_1/decodor.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mux_data' (0#1) [E:/proiect_amd/project_1/decodor.v:34]
+WARNING: [Synth 8-689] width (1) of port connection 'di2' does not match port width (3) of module 'mux_data' [E:/proiect_amd/project_1/decodor.v:189]
+WARNING: [Synth 8-689] width (1) of port connection 'di1' does not match port width (8) of module 'mux_data' [E:/proiect_amd/project_1/decodor.v:189]
+WARNING: [Synth 8-689] width (1) of port connection 'di0' does not match port width (8) of module 'mux_data' [E:/proiect_amd/project_1/decodor.v:189]
+INFO: [Synth 8-6157] synthesizing module 'done_gen' [E:/proiect_amd/project_1/decodor.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'done_gen' (0#1) [E:/proiect_amd/project_1/decodor.v:76]
+WARNING: [Synth 8-689] width (1) of port connection 'WC_o' does not match port width (8) of module 'done_gen' [E:/proiect_amd/project_1/decodor.v:191]
+WARNING: [Synth 8-689] width (1) of port connection 'AC_o' does not match port width (8) of module 'done_gen' [E:/proiect_amd/project_1/decodor.v:191]
+WARNING: [Synth 8-689] width (1) of port connection 'CR10' does not match port width (2) of module 'done_gen' [E:/proiect_amd/project_1/decodor.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [E:/proiect_amd/project_1/decodor.v:157]
+WARNING: [Synth 8-3848] Net COA in module/entity top does not have driver. [E:/proiect_amd/project_1/decodor.v:162]
+WARNING: [Synth 8-3848] Net COW in module/entity top does not have driver. [E:/proiect_amd/project_1/decodor.v:162]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 1st driver pin 'reg8_word/do[1]' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-157.0 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 1st driver pin 'reg8_word/do[2]' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-157.0 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 1st driver pin 'reg8_word/do[3]' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-157.0 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 1st driver pin 'reg8_word/do[4]' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-157.0 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 1st driver pin 'reg8_word/do[5]' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-157.0 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 1st driver pin 'reg8_word/do[6]' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-157.0 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 1st driver pin 'reg8_word/do[7]' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-157.0 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-157.0 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:157]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 1st driver pin 'reg8_word/do[1]' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-191.13 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 1st driver pin 'reg8_word/do[2]' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-191.13 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 1st driver pin 'reg8_word/do[3]' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-191.13 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 1st driver pin 'reg8_word/do[4]' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-191.13 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 1st driver pin 'reg8_word/do[5]' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-191.13 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 1st driver pin 'reg8_word/do[6]' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-191.13 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 1st driver pin 'reg8_word/do[7]' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-191.13 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:191]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-191.13 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:191]
+WARNING: [Synth 8-3848] Net do_ctrl in module/entity top does not have driver. [E:/proiect_amd/project_1/decodor.v:189]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 1st driver pin 'reg8_word/do[1]' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-181.9 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 1st driver pin 'reg8_word/do[2]' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-181.9 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 1st driver pin 'reg8_word/do[3]' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-181.9 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 1st driver pin 'reg8_word/do[4]' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-181.9 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 1st driver pin 'reg8_word/do[5]' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-181.9 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 1st driver pin 'reg8_word/do[6]' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-181.9 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 1st driver pin 'reg8_word/do[7]' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin E:/proiect_amd/project_1/decodor.v-181.9 with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:181]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net E:/proiect_amd/project_1/decodor.v-181.9 is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:181]
+WARNING: [Synth 8-3917] design top has port do_word[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1099.965 ; gain = 559.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1099.965 ; gain = 559.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1099.965 ; gain = 559.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.395 ; gain = 559.695
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 1     
+	  15 Input    2 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7s50csga324-1 does not have CEAM library.
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'reg8_addr/do_reg' and it is trimmed from '8' to '1' bits. [E:/proiect_amd/project_1/decodor.v:8]
+WARNING: [Synth 8-3917] design top has port do_word[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_word[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[5] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[4] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port do_address[1] driven by constant 0
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[7] with 1st driver pin 'reg8_word/do_reg[7]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[7] with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net do[7] is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[6] with 1st driver pin 'reg8_word/do_reg[6]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[6] with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net do[6] is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[5] with 1st driver pin 'reg8_word/do_reg[5]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[5] with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net do[5] is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[4] with 1st driver pin 'reg8_word/do_reg[4]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[4] with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net do[4] is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[3] with 1st driver pin 'reg8_word/do_reg[3]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[3] with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net do[3] is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[2] with 1st driver pin 'reg8_word/do_reg[2]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[2] with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net do[2] is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[1] with 1st driver pin 'reg8_word/do_reg[1]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do[1] with 2nd driver pin 'GND' [E:/proiect_amd/project_1/decodor.v:8]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net do[1] is connected to at least one constant driver which has been preserved, other driver is ignored [E:/proiect_amd/project_1/decodor.v:8]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do_word_OBUF[0] with 1st driver pin 'do_word_OBUF[0]_inst_i_1/O' [E:/proiect_amd/project_1/decodor.v:18]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin do_word_OBUF[0] with 2nd driver pin 'reg8_word/do_reg[0]/Q' [E:/proiect_amd/project_1/decodor.v:8]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     3|
+|3     |LUT3 |     7|
+|4     |LUT4 |     7|
+|5     |LUT5 |    13|
+|6     |LUT6 |    14|
+|7     |FDRE |    21|
+|8     |IBUF |     9|
+|9     |OBUF |    19|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------+---------+------+
+|      |Instance        |Module   |Cells |
++------+----------------+---------+------+
+|1     |top             |         |    94|
+|2     |  cnt_address   |cnt      |    23|
+|3     |  cnt_word      |cnt_0    |    26|
+|4     |  ctrl_reg_inst |ctrl_reg |     9|
+|5     |  reg8_addr     |reg8     |     4|
+|6     |  reg8_word     |reg8_1   |     2|
++------+----------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 86 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1286.051 ; gain = 745.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1290.945 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1386.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 76c3a9a0
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 48 Warnings, 86 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1386.930 ; gain = 852.492
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1386.930 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/proiect_amd/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  1 23:06:16 2024...
